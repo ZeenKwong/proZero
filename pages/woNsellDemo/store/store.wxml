@@ -1,0 +1,20 @@
+<!--pages/woNsellDemo/store/store.wxml-->
+<view class='conTain test'>
+	<view class='announceMent test'>Announcement</view>
+	<view class='tittleInfo'>
+		<text>业务新装</text>
+	</view>
+	<view class='contextBox test'>
+		<view class='busIness test' wx:for="{{businessInstall}}" wx:for-index="index" wx:for-item="item"> {{item}} </view>
+		<view class='keyBusiness test'>智慧沃家</view>
+	</view>
+	<view class='tittleInfo'>
+		<text>业务办理</text>
+	</view>
+	<view class='contextBox test'>
+		<view class='busIness test' wx:for="{{businessHandle}}" wx:for-index="index" wx:for-item="item"> {{item}} </view>
+	</view>
+	<view class='bottomTab test'>
+		<view class='tabIcon test' wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item"> {{item}} </view>
+	</view>
+</view>

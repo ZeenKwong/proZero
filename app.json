@@ -1,5 +1,14 @@
 {
 	"pages":[
+		"pages/woNsellDemo/store/store",
 		"pages/helloWorld/helloWorld"
-	]
+	],
+	"window": {
+		"navigationBarBackgroundColor": "#ffffff",
+		"navigationBarTextStyle": "black",
+		"navigationBarTitleText": "沃行销2.0",
+		"backgroundColor": "#eeeeee",
+		"backgroundTextStyle": "light",
+		"enablePullDownRefresh": false
+	}
 }

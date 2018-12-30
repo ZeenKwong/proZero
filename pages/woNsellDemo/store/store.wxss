@@ -1,0 +1,42 @@
+/* pages/woNsellDemo/store/store.wxss */
+.test{
+	border-style: solid;
+	border-color: #000000;
+	background-color: aqua; 
+	/* widows: 100px;  
+	height: 100px; */
+}
+.conTain{
+	height: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+.announceMent{
+	/* display: flex; */
+	margin-top: 10rpx;
+	width: 90%;
+	height: 150rpx;
+}
+.contextBox{
+	margin-top: 10rpx;
+	width: 90%;
+	display: flex;
+	justify-content: space-between;
+	flex-wrap:wrap; 
+}
+.busIness{
+	/* width: 46%; */
+	width: 47%;
+	height: 205rpx;
+}
+.bottomTab{
+	position: fixed;
+	bottom: 0rpx;
+	width: 100%;
+	height: 8%;
+	display: flex;
+	justify-content: space-around;
+}

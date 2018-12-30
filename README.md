@@ -139,7 +139,7 @@
 ## 类vue的小程序框架---wepy
 	
 	npm install wepy-cli -g  //全局安装
-	wepy new 项目名称  //在根目录下生成框架
+	wepy init standard 项目名称  //在根目录下生成框架
 	cd 项目名称
 	npm  install  //安装依赖
 	wepy build --watch  开启实时编译
