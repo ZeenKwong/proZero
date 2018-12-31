@@ -20,7 +20,6 @@
   align-items: center;
   position: relative;
   margin-top: 20%;
-  margin-bottom: 10%;
 }
 
 .announceMent {
@@ -42,7 +41,6 @@
 }
 
 .announceMent .news {
-  /* position: relative; */
   width: 70rpx;
   height: 70rpx;
   margin-top: 30rpx;
@@ -182,36 +180,4 @@
   text-align: left;
   /* background: #FFFFFF; */
   box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
-}
-
-.bottomTab {
-  position: fixed;
-  bottom: 0rpx;
-  width: 100%;
-  height: 7%;
-  display: flex;
-  justify-content: space-around;
-  text-align: center;
-  background: #fff;
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
-}
-
-.bottomTab icon {
-  font-size: 40rpx;
-}
-
-.bottomTab iconactive {
-  color: #ff8260;
-}
-.iconactive {
-  color: #ff8260;
-	font-size: 50rpx;
-}
-
-.bottomTab view {
-  font-family: PingFangSC-Regular;
-  font-size: 20rpx;
-  color: #c8c8c8;
-  letter-spacing: -0.25px;
-  text-align: center;
 }

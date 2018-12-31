@@ -5,21 +5,30 @@ Page({
    * 页面的初始数据
    */
   data: {
+    keybusiness: {
+      name: '智慧沃家',
+      iconsrc: '../../../assets/img/mixSet.png',
+      firstStep: 'searchResource',
+    },
     businessInstall: [{
         name: '预付费实名',
-        iconsrc: '../../../assets/img/prepayRealname.png'
+        iconsrc: '../../../assets/img/prepayRealname.png',
+        firstStep: 'readIdcard',
       },
       {
         name: '号卡开户',
-        iconsrc: '../../../assets/img/cardNew.png'
+        iconsrc: '../../../assets/img/cardNew.png',
+        firstStep: 'chooseSet',
       },
       {
         name: '宽带开户',
-        iconsrc: '../../../assets/img/broadbandNew.png'
+        iconsrc: '../../../assets/img/broadbandNew.png',
+        firstStep: 'searchResource',
       },
       {
         name: '集客异步开户',
-        iconsrc: '../../../assets/img/asynchronousNew.png'
+        iconsrc: '../../../assets/img/asynchronousNew.png',
+        firstStep: '',
       },
     ],
     businessHandle: [{
@@ -31,32 +40,45 @@ Page({
         iconsrc: '../../../assets/img/broadbandToll.png'
       },
     ],
-    tabList: [{
-        name: '首页',
-        icon: 'icon-home'
-      },
-      {
-        name: '订单',
-        icon: 'icon-order'
-      },
-      {
-        name: '我的',
-        icon: 'icon-me'
-      }
-    ],
     announcement: {
       tittle: "智慧沃家视频版上线啦！",
       context: "智慧沃家视频版全新上线，海量资源任你选任...",
     },
-    activeWeb: "首页",
   },
-	webActive(event){
-		this.setData({
-			activeWeb : event.currentTarget.dataset.name,
-		});
-		console.log(event.currentTarget.dataset.name);
-		console.log(this.activeWeb);
-	},
+  webActive(event) {
+    this.setData({
+      activeWeb: event.currentTarget.dataset.name,
+    });
+    console.log(event.currentTarget.dataset.name);
+    console.log(this.activeWeb);
+  },
+  storeRoute(event) {
+    if (event.currentTarget.dataset.step) {
+      wx.navigateTo({
+        url: '../../../pages/woNsellDemo/' + event.currentTarget.dataset.step + '/' + event.currentTarget.dataset.step,
+      });
+    } else {
+      this.tipsToast();
+    };
+  },
+  tipsToast() {
+    wx.showModal({
+      title: '敬请期待！',
+      content: '该功能正在安排',
+      showCancel: false, //是否显示取消按钮
+      cancelText: "否", //默认是“取消”
+      cancelColor: 'skyblue', //取消文字的颜色
+      confirmText: "尽快安排", //默认是“确定”
+      confirmColor: '#ff8620', //确定文字的颜色
+      success: function(res) {
+        if (res.cancel) {
+          //点击取消,默认隐藏弹框
+        } else {
+          //点击确定
+        }
+      },
+    })
+  },
   /**
    * 生命周期函数--监听页面加载
    */

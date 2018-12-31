@@ -1,6 +1,13 @@
 {
-	"pages":[
+	"pages": [
 		"pages/woNsellDemo/store/store",
+		"pages/woNsellDemo/readIdcard/readIdcard",
+		"pages/woNsellDemo/faceRECG/faceRECG",
+		"pages/woNsellDemo/searchResource/searchResource",
+		"pages/woNsellDemo/chooseSet/chooseSet",
+		"pages/woNsellDemo/formConfirm/formConfirm",
+		"pages/woNsellDemo/orderTrack/orderTrack",
+		"pages/woNsellDemo/personal/personal",
 		"pages/helloWorld/helloWorld"
 	],
 	"window": {
@@ -10,5 +17,31 @@
 		"backgroundColor": "#eeeeee",
 		"backgroundTextStyle": "light",
 		"enablePullDownRefresh": false
+	},
+	"tabBar": {
+		"color": "#E3E3E3",
+		"selectedColor": "#ff8260",
+		"backgroundColor": "#ffffff",
+		"borderStyle": "black",
+		"list": [
+			{
+				"pagePath": "pages/woNsellDemo/store/store",
+				"text": "首页",
+				"iconPath": "assets/icon/home.png",
+				"selectedIconPath": "assets/icon/home-hover.png"
+			},
+			{
+				"pagePath": "pages/woNsellDemo/orderTrack/orderTrack",
+				"text": "订单",
+				"iconPath": "assets/icon/order.png",
+				"selectedIconPath": "assets/icon/orderhover.png"
+			},
+			{
+				"pagePath": "pages/woNsellDemo/personal/personal",
+				"text": "我的",
+				"iconPath": "assets/icon/me.png",
+				"selectedIconPath": "assets/icon/me-hover.png"
+			}
+		]
 	}
 }

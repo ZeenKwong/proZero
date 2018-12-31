@@ -150,6 +150,10 @@
 ## 小程序的列表渲染
 ## 样式坑记录一
 ## iconfont图标引入
+**wxml** ： class='iconfont icon-home'  
+**app.wxss** :
 ## 样式绑定
-## 事件
+## 事件bind&catch
 ## setData()
+## tabBar
+iconpath仅支持png jpg jpeg

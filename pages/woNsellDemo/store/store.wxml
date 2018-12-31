@@ -18,13 +18,13 @@
     <view class='decoRate1'></view>
   </view>
   <view class='contextBox'>
-    <view class='busIness' wx:for="{{businessInstall}}" wx:for-index="index" wx:for-item="item">
-      <image src='{{item.iconsrc}}'></image>
+    <view class='busIness' wx:for="{{businessInstall}}" wx:for-index="index" wx:for-item="item" wx:key='index'>
+      <image src='{{item.iconsrc}}' bindtap='storeRoute' data-step='{{item.firstStep}}'></image>
       <view>{{item.name}} </view>
     </view>
     <view class='keyBusiness'>
-      <image src='../../../assets/img/mixSet.png'></image>
-      <view>智慧沃家</view>
+      <image src='{{keybusiness.iconsrc}}' bindtap='storeRoute' data-step='{{keybusiness.firstStep}}'></image>
+      <view>{{keybusiness.name}}</view>
     </view>
   </view>
   <view class='tittleInfo'>
@@ -33,16 +33,9 @@
     <view class='decoRate2'></view>
   </view>
   <view class='contextBox'>
-    <view class='busIness' wx:for="{{businessHandle}}" wx:for-index="index" wx:for-item="item">
-      <image src='{{item.iconsrc}}'></image>
+    <view class='busIness' wx:for="{{businessHandle}}" wx:for-index="index" wx:for-item="item" wx:key='index'>
+      <image src='{{item.iconsrc}}' bindtap='tipsToast'></image>
       <view>{{item.name}} </view>
     </view>
-  </view>
-</view>
-<view class='bottomTab'>
-  <view class='tabIcon' wx:for="{{tabList}}" wx:for-index="index" wx:for-item="item">
-    <!-- <image src='{{item.iconsrc}}'></image> -->
-    <icon class='iconfont {{item.icon}}' style='color:{{item.name == activeWeb?"#ff8260":""}}' bindtouchstart='webActive' data-name='{{item.name}}'></icon>
-    <view style='color:{{item.name == activeWeb?"#ff8260":""}}'>{{item.name}}</view>
   </view>
 </view>
