@@ -4,8 +4,8 @@
 		"pages/helloWorld/helloWorld"
 	],
 	"window": {
-		"navigationBarBackgroundColor": "#ffffff",
-		"navigationBarTextStyle": "black",
+		"navigationBarBackgroundColor": "#f85550",
+		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "沃行销2.0",
 		"backgroundColor": "#eeeeee",
 		"backgroundTextStyle": "light",

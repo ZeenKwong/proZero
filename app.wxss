@@ -1,0 +1,14 @@
+@import "assets/icon/bottomtab.wxss";
+.iconfont {
+  font-family:"iconfont" !important;
+  font-size:16px;
+  font-style:normal;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-me:before { content: "\e618"; }
+
+.icon-home:before { content: "\e644"; }
+
+.icon-order:before { content: "\e621"; }

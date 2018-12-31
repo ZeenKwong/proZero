@@ -143,3 +143,13 @@
 	cd 项目名称
 	npm  install  //安装依赖
 	wepy build --watch  开启实时编译
+
+## flex布局
+[参考链接](http://www.ruanyifeng.com/blog/2015/07/flex-grammar.html)
+
+## 小程序的列表渲染
+## 样式坑记录一
+## iconfont图标引入
+## 样式绑定
+## 事件
+## setData()
