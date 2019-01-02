@@ -61,24 +61,24 @@ Page({
       this.tipsToast();
     };
   },
-  tipsToast() {
-    wx.showModal({
-      title: '敬请期待！',
-      content: '该功能正在安排',
-      showCancel: false, //是否显示取消按钮
-      cancelText: "否", //默认是“取消”
-      cancelColor: 'skyblue', //取消文字的颜色
-      confirmText: "尽快安排", //默认是“确定”
-      confirmColor: '#ff8620', //确定文字的颜色
-      success: function(res) {
-        if (res.cancel) {
-          //点击取消,默认隐藏弹框
-        } else {
-          //点击确定
-        }
-      },
-    })
-  },
+	tipsToast() {
+		wx.showModal({
+			title: '敬请期待！',
+			content: '该功能正在安排',
+			showCancel: false, //是否显示取消按钮
+			cancelText: "否", //默认是“取消”
+			cancelColor: 'skyblue', //取消文字的颜色
+			confirmText: "尽快安排", //默认是“确定”
+			confirmColor: '#ff8620', //确定文字的颜色
+			success: function (res) {
+				if (res.cancel) {
+					//点击取消,默认隐藏弹框
+				} else {
+					//点击确定
+				}
+			},
+		})
+	},
   /**
    * 生命周期函数--监听页面加载
    */

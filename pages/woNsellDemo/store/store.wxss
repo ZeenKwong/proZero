@@ -1,17 +1,36 @@
 /* pages/woNsellDemo/store/store.wxss */
 
-.test {
-  border: 1rpx solid #000;
-  background-color: aqua;
-  /* widows: 100px;  
-	height: 100px; */
-}
+
 
 .backGround {
   width: 100%;
-  height: 100rpx;
+  height: 250rpx;
   position: fixed;
   z-index: -1;
+}
+
+.header {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+  height: 7%;
+  display: flex;
+  flex-wrap: wrap;
+  z-index: 10;
+  justify-content: space-around;
+  text-align: left;
+  /* background: #FFFFFF; */
+  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
+}
+
+.header .pageName {
+  width: 100%;
+  font-family: PingFangSC-Regular;
+  font-size: 37rpx;
+  color: #fff;
+  letter-spacing: -0.48px;
+  text-align: center;
+  margin-top: 60rpx;
 }
 
 .conTain {
@@ -19,11 +38,11 @@
   flex-direction: column;
   align-items: center;
   position: relative;
-  margin-top: 20%;
+  margin-top: 35%;
 }
 
 .announceMent {
-  margin-top: 10rpx;
+  margin-top: 30rpx;
   width: 90%;
   height: 130rpx;
   background: #fff;
@@ -167,17 +186,4 @@
   color: #000;
   letter-spacing: 0;
   text-align: center;
-}
-
-.header {
-  position: fixed;
-  top: 0rpx;
-  width: 100%;
-  height: 7%;
-  display: flex;
-  z-index: 10;
-  justify-content: space-around;
-  text-align: left;
-  /* background: #FFFFFF; */
-  box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.10);
 }

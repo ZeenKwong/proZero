@@ -1,16 +1,17 @@
 {
 	"pages": [
 		"pages/woNsellDemo/store/store",
+		"pages/woNsellDemo/personal/personal",
 		"pages/woNsellDemo/readIdcard/readIdcard",
 		"pages/woNsellDemo/faceRECG/faceRECG",
 		"pages/woNsellDemo/searchResource/searchResource",
 		"pages/woNsellDemo/chooseSet/chooseSet",
 		"pages/woNsellDemo/formConfirm/formConfirm",
 		"pages/woNsellDemo/orderTrack/orderTrack",
-		"pages/woNsellDemo/personal/personal",
 		"pages/helloWorld/helloWorld"
 	],
 	"window": {
+		"navigationStyle":"custom",
 		"navigationBarBackgroundColor": "#f85550",
 		"navigationBarTextStyle": "white",
 		"navigationBarTitleText": "沃行销2.0",

@@ -1,2 +1,34 @@
 <!--pages/woNsellDemo/personal/personal.wxml-->
-<text>个人中心页</text>
+<view class='containBox'>
+  <image src='/assets/img/Bar.png' class='backGround'></image>
+	<view class='pageName'>
+		<text>个人中心</text>
+	</view>
+	<view class='infoShow'>
+		<view class='avatar'>
+			<image src='/assets/img/avatar.png'></image>
+		</view>
+		<view class='infoCard'>
+			<view class='channelInfo'>{{channelInfo}}</view>
+			<view class='info'>
+				<view wx:for='{{userInfo}}' wx:key='index' class='{{index>0?"borderLeft":""}}'>
+					<view class='subInfo'>
+						<view class='name'>{{item.name}}</view>
+						<view class='value'>{{item.value}}</view>
+					</view>
+				</view>
+			</view>
+			<view class='infoBottom'></view>
+		</view>
+	</view>
+	<view class='option' bindtap='tipsToast'>
+		<view><icon class='iconfont icon-lock'></icon></view>
+		<view >修改密码</view>
+		<view><icon class='iconfont icon-Right'></icon></view>
+	</view>
+	<view class='option' bindtap='tipsToast'>
+		<icon class='iconfont icon-change_line'></icon>
+		<view>更换帐号</view>
+		<icon class='iconfont icon-Right'></icon>
+	</view>
+</view>

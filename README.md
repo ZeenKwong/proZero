@@ -151,6 +151,11 @@
 	display: flex;  //使用这句开启flex布局及其相关属性
 	flex-direction: row | row-reverse | column | column-reverse;  //确定flex轴方向，依次为+x/-x/-y/+y
 	flex-wrap: nowrap | wrap | wrap-reverse;  //这个是定义是否需要换行，用于方便多组件自动换行布局，依次代表不换行/换行/向上换行
+
+注：  
+1. 与wx:for结合使用时，需要写在for组件的父组件中才能生效  
+2. 子组件可以使用position:absolute实现组件重叠，同时该子组件仍具有父组件的flex布局（轴向、对齐这些），但是当子组件使用absolute后，父组件将不再拥有该子组件的高度；  
+3. 使用justify-content时，要注意父组件宽度大于子组件之和，如果父组件是被子组件撑开的情况，是无法实现对齐的；
 	
 ## 小程序的列表渲染
 使用wx:for进行列表渲染，其中wx:key是必须的，不然会有警告，wx:for-index/wx:for-item好像是以前的写法，下次不写试试；
@@ -194,7 +199,16 @@ rpx是小程序专有的单位，可以引入后可以很方便地实现自适�
 通过三元表达式实现样式绑定，同理可以套到style里 
 
 	class="classA" :class="{classB:isActive} " //这是vue中的写法
-	class="classA {{isActice?' ':classB}}"  //这是小程序里的写法
+	class="classA {{isActice?' ':classB}}"  //这是小程序里的写法  
+
+css子代选择器:first-child面对wx:for循环的时候，不能选择到循环出来的第一个子代，折中办法是将子代样式与index绑定进行选择，如下：  
+
+	<view wx:for='{{userInfo}}' wx:key='index' class='{{index>0?"borderLeft":""}}'>
+		<view class='loop'>
+			<view class='name'>{{item.name}}</view>
+			<view class='value'>{{item.value}}</view>
+		</view>
+	</view>
 ## 事件bind&catch  
 详见[官方文档](https://developers.weixin.qq.com/miniprogram/dev/framework/view/wxml/event.html)中对于事件的介绍 ，只需在相关的时间前加入bind或者catch即可触发相关方法，可以简单理解为原click
 

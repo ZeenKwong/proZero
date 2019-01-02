@@ -1,14 +1,16 @@
 <!--pages/woNsellDemo/store/store.wxml-->
+
 <view class='header'>
-  <image src='../../../assets/img/Bar.png' class='backGround'></image>
+  <image src='/assets/img/Bar.png' class='backGround'></image>
+  <view class='pageName'>广东专区</view>
   <view class='announceMent'>
-    <image src='../../../assets/img/zhuangshi1.png' class='decoRate1'></image>
-    <image src='../../../assets/img/news.png' class='news'></image>
+    <image src='/assets/img/zhuangshi1.png' class='decoRate1'></image>
+    <image src='/assets/img/news.png' class='news'></image>
     <view class='tittleContain'>
       <view class='tittle'>{{announcement.tittle}}</view>
       <view class='context'>{{announcement.context}}</view>
     </view>
-    <image src='../../../assets/img/zhuangshi2.png' class='decoRate2'></image>
+    <image src='/assets/img/zhuangshi2.png' class='decoRate2'></image>
   </view>
 </view>
 <view class='conTain'>
