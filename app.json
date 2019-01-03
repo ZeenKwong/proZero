@@ -1,5 +1,6 @@
 {
 	"pages": [
+		"pages/woNsellDemo/orderTrack/orderTrack",
 		"pages/woNsellDemo/store/store",
 		"pages/woNsellDemo/personal/personal",
 		"pages/woNsellDemo/readIdcard/readIdcard",
@@ -7,7 +8,6 @@
 		"pages/woNsellDemo/searchResource/searchResource",
 		"pages/woNsellDemo/chooseSet/chooseSet",
 		"pages/woNsellDemo/formConfirm/formConfirm",
-		"pages/woNsellDemo/orderTrack/orderTrack",
 		"pages/helloWorld/helloWorld"
 	],
 	"window": {

@@ -1,2 +1,54 @@
 <!--pages/woNsellDemo/orderTrack/orderTrack.wxml-->
-<text>订单查询页</text>
+<view class='fixedHeader'>
+	<image src='/assets/img/Bar.png' class='backGround'></image>
+	<input class='input' type='number' placeholder='{{inputPlaceholder}}' maxlength='11' placeholder-class='inputPlaceholder'></input>
+	<view class='filterBar'>
+		  <scroll-view 
+			scroll-x="true">
+				<view 
+				wx:for='{{orderKind}}' 
+				wx:key='{{index}}'
+				class='filterItem {{currentStep == index?"filteritemChoose":""}}' 
+				bindtap='filterChange' 
+				data-index='{{index}}'>
+				{{item}}
+				</view>
+			</scroll-view>
+	</view>
+	<view class='filterBarPlus'></view>
+</view>
+<!-- 这里要补一个样式绑定，绑定两种margintop -->
+<view class='contain'>
+	<view class='orderNone' wx:if="{{isNone}}">
+		<image src='/assets/img/orderNone.png'></image>
+		<view>{{orderNone}}</view>
+	</view>
+	<view class='orderDetail' wx:if="{{!isNone}}">
+		<view class='tittle'>
+			<view class='test'>666</view>
+			<view class='test'>666</view>
+		</view>
+		<view class='context'>
+			<view class='status'>
+				<image src='/assets/img/orderphoto.png'></image>
+				<view>666</view>
+			</view>
+			<view class='detail'>
+				<view>666</view>
+				<view>666</view>
+				<view>666</view>
+				<view>666</view>
+			</view>
+		</view>
+	</view>
+	<view class='orderDetail test' wx:if="{{!isNone}}">
+	666
+	</view>
+	<view class='orderDetail test' wx:if="{{!isNone}}">
+	666
+	</view>
+	<view class='orderDetail test' wx:if="{{!isNone}}">
+	666
+	</view>
+</view>
+

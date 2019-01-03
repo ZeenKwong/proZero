@@ -1,1 +1,168 @@
 /* pages/woNsellDemo/orderTrack/orderTrack.wxss */
+page{
+	background-color: #e9e9e9;
+}
+.fixedHeader {
+  position: fixed;
+  top: 0rpx;
+  width: 100%;
+}
+
+.backGround {
+  width: 100%;
+  height: 200rpx;
+  position: absolute;
+  z-index: -1;
+}
+
+.input {
+  opacity: 0.2;
+  background: #fff;
+  border-radius: 4px;
+  margin-top: 60rpx;
+  margin-left: 25rpx;
+  width: 450rpx;
+  height: 40rpx;
+}
+
+.inputPlaceholder {
+  opacity: 0.7;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #000;
+  letter-spacing: 0;
+  line-height: 12px;
+}
+
+.filterBar {
+  background: #fff;
+  width: 100%;
+  margin-top: 30rpx;
+  height: 70rpx;
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.10);
+  overflow: hidden;
+  white-space: nowrap;
+}
+
+.filterItem {
+  height: 100%;
+  display: inline-block;
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  letter-spacing: 0;
+  color: #999;
+  padding: 10rpx;
+}
+
+.filteritemChoose {
+  color: #000;
+  font-size: 32rpx;
+  /* border-bottom: #ff8620 solid 2px; */
+}
+.filterBarPlus{
+	height: 70rpx;
+	width: 100%;
+	/* background-color: black; */
+}
+
+.contain {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 240rpx;
+}
+.contain :not(:first-child){
+	margin-top: 10px;
+}
+.orderNone {
+  margin-top: 150rpx;
+  text-align: center;
+}
+
+.orderNone :first-child {
+  height: 200rpx;
+  width: 200rpx;
+}
+
+.orderNone :last-child {
+  font-family: PingFangSC-Regular;
+  font-size: 30rpx;
+  color: #999;
+  letter-spacing: 0;
+  text-align: center;
+}
+.orderDetail{
+	width: 100%;
+	height: 250rpx;
+	background-color: #fff;
+}
+.orderDetail .tittle{
+	border-bottom: 1px solid #d3d3d3;
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+}
+.orderDetail .tittle :first-child{
+	font-family: PingFangSC-Regular;
+	font-size: 28rpx;
+	color: #333333;
+	letter-spacing: 0;
+	margin-left: 10px;
+}
+.orderDetail .tittle :last-child{
+	font-family: PingFangSC-Regular;
+	font-size: 25rpx;
+	color: #999999;
+	letter-spacing: 0;
+	line-height: 12px;
+	margin-top: 0px;
+	margin-right: 10px;
+}
+.context{
+	display: flex;
+	flex-direction: row;
+	justify-content: left;
+	align-items: flex-start;
+}
+.context .status{
+	margin-left: 10px;
+	border: 1px solid rgb(44, 221, 0);
+	height: 160rpx;
+	width: 160rpx;
+	display: flex;
+	flex-direction: column-reverse;
+}
+
+.context .status image{
+	height: 160rpx;
+	width: 160rpx;
+}
+.context .status view{
+	text-align: center;
+	position: absolute;
+	width: 160rpx;
+	margin-top: 0px;
+	background-color: green;
+	font-family: PingFangSC-Regular;
+	font-size: 35rpx;
+	color: #FFFFFF;
+	letter-spacing: 0;
+}
+.context .detail{
+	margin-left: 10px;
+	margin-top: 0rpx;
+	border: 1px solid rgb(44, 221, 0);
+	height: 160rpx;
+	width: 520rpx;
+}
+.context .detail view{
+	margin-top: 0rpx;
+	font-size: 30rpx;
+	font-family: PingFangSC-Regular;
+	color: #999999;
+	letter-spacing: 0;
+}
+.context .detail :first-child{
+	color: #ff8260;
+}
