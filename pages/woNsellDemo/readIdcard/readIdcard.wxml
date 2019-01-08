@@ -1,2 +1,3 @@
 <!--pages/woNsellDemo/readIdcard/readIdcard.wxml-->
 <text>读身份证页</text>
+<button class='btn' bindtap='btn'>接口测试</button>

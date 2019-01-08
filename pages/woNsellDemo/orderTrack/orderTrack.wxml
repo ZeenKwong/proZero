@@ -1,54 +1,49 @@
 <!--pages/woNsellDemo/orderTrack/orderTrack.wxml-->
 <view class='fixedHeader'>
-	<image src='/assets/img/Bar.png' class='backGround'></image>
-	<input class='input' type='number' placeholder='{{inputPlaceholder}}' maxlength='11' placeholder-class='inputPlaceholder'></input>
-	<view class='filterBar'>
-		  <scroll-view 
-			scroll-x="true">
-				<view 
-				wx:for='{{orderKind}}' 
-				wx:key='{{index}}'
-				class='filterItem {{currentStep == index?"filteritemChoose":""}}' 
-				bindtap='filterChange' 
-				data-index='{{index}}'>
-				{{item}}
-				</view>
-			</scroll-view>
-	</view>
-	<view class='filterBarPlus'></view>
+  <image src='/assets/img/Bar.png' class='backGround'></image>
+  <view class='input'>
+    <icon class='iconfont icon-search'></icon>
+    <input bindfocus='onFocus' bindblur='onBlur' type='number' placeholder='{{inputPlaceholder}}' maxlength='11' placeholder-class='inputPlaceholder'></input>
+    <icon class='iconfont icon-cancel'></icon>
+  </view>
+  <view class='filterBar'>
+    <icon class='iconfont .icon-Right' style='padding-right: 60rpx;background-color: rgba(255, 255, 255, 0.795);'></icon>
+    <icon class='iconfont icon-options- '></icon>
+    <scroll-view scroll-x="true">
+      <view wx:for='{{orderKind}}' wx:key='{{index}}' class='filterItem {{currentStep == index?"filteritemChoose":""}}' bindtap='filterChange' data-index='{{index}}' data-name='{{item}}'>
+        {{item}}
+      </view>
+    </scroll-view>
+
+  </view>
 </view>
 <!-- 这里要补一个样式绑定，绑定两种margintop -->
 <view class='contain'>
-	<view class='orderNone' wx:if="{{isNone}}">
-		<image src='/assets/img/orderNone.png'></image>
-		<view>{{orderNone}}</view>
-	</view>
-	<view class='orderDetail' wx:if="{{!isNone}}">
-		<view class='tittle'>
-			<view class='test'>666</view>
-			<view class='test'>666</view>
-		</view>
-		<view class='context'>
-			<view class='status'>
-				<image src='/assets/img/orderphoto.png'></image>
-				<view>666</view>
-			</view>
-			<view class='detail'>
-				<view>666</view>
-				<view>666</view>
-				<view>666</view>
-				<view>666</view>
-			</view>
-		</view>
-	</view>
-	<view class='orderDetail test' wx:if="{{!isNone}}">
-	666
-	</view>
-	<view class='orderDetail test' wx:if="{{!isNone}}">
-	666
-	</view>
-	<view class='orderDetail test' wx:if="{{!isNone}}">
-	666
-	</view>
+  <view class='orderNone' wx:if="{{isNone}}">
+    <image src='/assets/img/orderNone.png'></image>
+    <view>{{orderNone}}</view>
+  </view>
+  <view wx:for="{{orderData}}" wx:key="{{index}}" class='orderDetail' wx:if="{{!isNone}}" hidden='{{currentName != item.ordertype && currentName != "全部"}}'>
+    <view class='tittle'>
+      <view>{{item.ordertype}}</view>
+      <view>{{item.time}}</view>
+    </view>
+    <view class='context'>
+      <view class='status'>
+        <image src='/assets/img/orderphoto.png'></image>
+        <view style='background-color:{{item.color}}'>{{item.step}}</view>
+      </view>
+      <view class='detail'>
+        <view class='detailtittle'>
+          <text>{{item.name}}</text>
+        </view>
+        <view class='detailhighline'>
+          <text>订单编号：</text>{{item.orderID}}</view>
+        <view>
+          <text>联系人：</text>{{item.contact}}</view>
+        <view>
+          <text>联系电话：</text>{{item.photo}}</view>
+      </view>
+    </view>
+  </view>
 </view>
-

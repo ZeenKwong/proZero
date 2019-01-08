@@ -21,14 +21,9 @@
 			<view class='infoBottom'></view>
 		</view>
 	</view>
-	<view class='option' bindtap='tipsToast'>
-		<view><icon class='iconfont icon-lock'></icon></view>
-		<view >修改密码</view>
-		<view><icon class='iconfont icon-Right'></icon></view>
-	</view>
-	<view class='option' bindtap='tipsToast'>
-		<icon class='iconfont icon-change_line'></icon>
-		<view>更换帐号</view>
+	<view class='option' bindtap='tipsToast' wx:for="{{sysOption}}" wx:key="{{index}}">
+		<icon class='iconfont {{item.icon}}'></icon>
+		<view>{{item.name}}</view>
 		<icon class='iconfont icon-Right'></icon>
 	</view>
 </view>

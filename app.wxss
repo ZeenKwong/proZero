@@ -6,6 +6,7 @@
 }
 @import "assets/icon/bottomtab.wxss";
 @import "assets/icon/personal.wxss";
+@import "assets/icon/orderTrack.wxss";
 
 .iconfont {
   font-family: "iconfont" !important;
@@ -13,6 +14,9 @@
   font-style: normal;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
 }
 
 .icon-me:before {
@@ -41,4 +45,76 @@
 
 .icon-change_line:before {
   content: "\e7e6";
+}
+
+.icon-service:before {
+  content: "\e649";
+}
+
+.icon-weixin:before {
+  content: "\e656";
+}
+
+.icon-cancel:before {
+  content: "\e607";
+}
+
+.icon-search:before {
+  content: "\e644";
+}
+
+.icon-message:before {
+  content: "\e78a";
+}
+
+.icon-setting:before {
+  content: "\e78e";
+}
+
+.icon-location:before {
+  content: "\e790";
+}
+
+.icon-team:before {
+  content: "\e7ae";
+}
+
+.icon-file-text:before {
+  content: "\e7b9";
+}
+
+.icon-like:before {
+  content: "\e7c8";
+}
+
+.icon-unlike:before {
+  content: "\e7c9";
+}
+
+.icon-mail:before {
+  content: "\e7de";
+}
+
+.icon-idcard:before {
+  content: "\e7df";
+}
+
+.icon-creditcard:before {
+  content: "\e7e0";
+}
+
+.icon-swap:before {
+  content: "\e7f2";
+}
+
+.icon-eye-fill:before {
+  content: "\e869";
+}
+
+.icon-alipay:before {
+  content: "\e70a";
+}
+
+.icon-options-:before {
+  content: "\e62b";
 }

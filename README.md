@@ -252,3 +252,15 @@ iconpath仅支持png jpg jpeg
 3.scroll-view 中的需要滑动的元素要用 dislay:inline-block; 进行元素的横向编排；
 
 4.包裹 scroll-view 的大盒子有明确的宽和加上样式-->  overflow:hidden;white-space:nowrap;
+## in 和 indexof  
+用于判断一个值在数组中是否存在的时候  
+
+	var arr_data = [1,2,3]; 
+	arr_data.indexOf(1); //如果存在返回值的下标，不存在返回-1
+
+	4 in arr 表示数组中arr[4]存在
+	"b" in arr 表示数组中arr[“b”]不存在
+
+## 关于透明
+- opacity会让内容也变透明，只能通过 rgba来设置背景半透明，从而不影响内容颜色；  
+- 设置全透明可以使用transparent

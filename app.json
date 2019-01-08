@@ -1,9 +1,9 @@
 {
 	"pages": [
-		"pages/woNsellDemo/orderTrack/orderTrack",
+		"pages/woNsellDemo/readIdcard/readIdcard",
 		"pages/woNsellDemo/store/store",
 		"pages/woNsellDemo/personal/personal",
-		"pages/woNsellDemo/readIdcard/readIdcard",
+		"pages/woNsellDemo/orderTrack/orderTrack",
 		"pages/woNsellDemo/faceRECG/faceRECG",
 		"pages/woNsellDemo/searchResource/searchResource",
 		"pages/woNsellDemo/chooseSet/chooseSet",

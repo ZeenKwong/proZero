@@ -7,6 +7,15 @@ Page({
 	data: {
 
 	},
+	btn(){
+		console.log('any');
+		wx.request({
+			url: 'http://127.0.0.1:8000/',
+			complete:function(res){
+				console.log(res.data);
+			}
+		})
+	},
 
 	/**
 	 * 生命周期函数--监听页面加载
